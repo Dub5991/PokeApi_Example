@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI Example</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('/img/pokemon_fixed.svg'); size: cover; background-repeat: no-repeat; background-attachment: fixed; background-size: 100%;">
+    <!-- Header with a red background color and black text -->
+    
+    <div class="card" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; margin-top: 100px; padding: 20px; border: 10px solid #000000; border-radius: 25px; box-shadow: 0px 0px 1000px 25px rgba(0, 0, 0, 1); background-color: #f0f0f0;">
+        <h1 style="text-align: center; font-size: 24px; margin-bottom: 20px;">Pokémon Information</h1>
+        <form id="pokemonForm" onsubmit="searchPokemon(event);">
+            <div class="input-group" style="display: flex; margin-bottom: 10px;">
+                <input type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID" class="form-control" style="flex: 1; padding: 10px; border: 5px solid #000000; border-radius: 4px 0 0 4px;">
+                <button type="submit" class="btn" style="padding: 10px 20px; border: 5px solid #000000; border-left: 0; border-radius: 0 4px 4px 0; background-color: #ff0000; color: white; cursor:grab;">Search</button>
+            </div>
+        </form>
+        <div id="result" style="margin-top: 20px;"></div>
+    </div>
+    <script src="async.js"></script>
+</body>
+</html>
