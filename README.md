@@ -14,7 +14,7 @@ Search Pokémon by Name or ID: Users can search for Pokémon by entering their n
 ## How to Use
 Clone the repository: 
 
-- git clone https://github.com/your-username/pokemon-info-app.git
+- git clone [https://github.com/your-username/pokemon-info-app.git](https://github.com/Dub5991/PokeApi_Example.git)
 - Open the index.html file: Simply open the index.html file in a web browser.
 
  ## Search for Pokémon: 
